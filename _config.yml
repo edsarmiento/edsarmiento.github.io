@@ -9,20 +9,20 @@ description: "Software Engineer with more than 12 years of expierience in the IT
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: David Sarmiento
   pic: 1
-  position: Lead Designer
+  position: Software Engineer
   social:
-    - title: Linkedin
+    - title: linkedin
       url: #
     - title: facebook
       url: #
     - title: stack-overflow
       url: #
 
-# - name: Larry Parker
+# - name: 
 #   pic: 2
-#   position: Lead Marketer
+#   position: 
 #   social:
 #     - title: twitter
 #       url: #
@@ -31,9 +31,9 @@ people:
 #     - title: linkedin
 #       url: #
 
-# - name: Diana Petersen
+# - name: 
 #   pic: 3
-#   position: Lead Developer
+#   position: 
 #   social:
 #     - title: twitter
 #       url: #
