@@ -19,6 +19,27 @@ body {
     line-height: 1.6;
 }
 
+.styled-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.styled-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #98c3d1; /* Left border */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth transition */
+}
+
+.styled-list li:hover {
+    background-color: #98c3d1; /* Change background on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slightly increase size */
+}
+
 .text-primary {
     color: #{{ site.data.template.color.primary }};
 }
