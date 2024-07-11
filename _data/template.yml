@@ -5,6 +5,7 @@ color:
   secondary-dark: 333
   muted: 4b6b6b
   hover-selected: 45d721
+  link-dark-blue: 1759A6
 
 # Font Families
 font:
