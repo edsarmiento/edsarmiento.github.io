@@ -19,6 +19,33 @@ body {
     line-height: 1.6;
 }
 
+/* table for skills */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: justify;
+}
+th {
+    background-color: #728873;
+    color: white;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.category {
+    font-weight: bold;
+    color: #333;
+}
+
 .styled-list {
     list-style-type: none; /* Remove default bullets */
     padding: 0;
@@ -367,6 +394,17 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+}
+
+section h3.section-subheading-table {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 400; */
 }
 
 @media(min-width:768px) {
