@@ -14,6 +14,10 @@ body {
     color: #{{ site.data.template.color.muted }};
 }
 
+text-degree {
+  color: red;
+}
+
 .text-details-about {
     text-align: justify;
     line-height: 1.6;
@@ -120,7 +124,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f5f2f2;
+    background-color: #f8f8ff;
 }
 
 .bg-darkest-gray {
@@ -390,6 +394,15 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+}
+
+section h2.section-heading-cursive {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: {{ site.data.template.font.secondary }};
 }
 
 section h3.section-subheading {
