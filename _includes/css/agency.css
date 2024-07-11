@@ -399,7 +399,7 @@ section h2.section-heading {
 section h2.section-heading-cursive {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 400;
     font-family: {{ site.data.template.font.secondary }};
