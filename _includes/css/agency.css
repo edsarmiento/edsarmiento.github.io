@@ -23,6 +23,14 @@ text-degree {
     line-height: 1.6;
 }
 
+/* contact table */
+
+.table-contact {
+    width: auto; /* Let the table adjust to its content */
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
 /* table for skills */
 
 table {
