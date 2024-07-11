@@ -1,134 +1,130 @@
 <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact</h2>
-                    
-                    <br>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading-black">Contact</h2>
+
+                <br>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <table>
-                        <tr>
-                            <td class="category">
-                                Phone Number:
-                            </td>
-                            <td>
-                                +52 2411450978     
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="category">
-                                WhatsApp:
-                            </td>
-                            <td>
-                                <div class="whatsapp-icon" >
-                                    <img src="img/whatsapp-icon.png"/> (click icon to start a conversation)
-                                </div>
-                                    <!-- Modal content -->
-                                    <div id="modal" class="modal">
-                                        <span class="modal-close" onclick="closeModal()">
-                                        &times;
-                                    </span>
-                                    <img src="img/wa.png">
-                                </div>   
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="category">
-                                Email:
-                            </td>
-                            <td>
-                                <a href="mailto:edst83@gmail.com">edst83@gmail.com</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="category">
-                                Linked In:
-                            </td>
-                            <td>
-                                <a href="https://www.linkedin.com/in/davidsarmiento5/" target="_BLANK">
-                                    https://www.linkedin.com/in/davidsarmiento5/
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p><strong>WhatsApp:</strong>
+                        <div class="whatsapp-icon"><img src="img/whatsapp-icon.png" /> (click to start a conversation)</div>
+                        </p>
+                        <p><strong>Phone:</strong> +52 241 145 0978 </p>
+                        <p><strong>Email:</strong> <a href="mailto:edst83@gmail.com">edst83@gmail.com</a></p>
+                        <p><strong>Address:</strong>
+                            <a href="https://www.linkedin.com/in/davidsarmiento5" target="_BLANK">
+                                https://www.linkedin.com/in/davidsarmiento5
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>  
+    </div>
+</section>
+<!-- Modal content -->
+<div id="modal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img src="img/wa.png">
+</div>
 
-    <style>
-        /* Styling for the modal */
-        .modal {
-          display: none; /* Hide modal by default */
-          position: fixed;
-          z-index: 1000; /* Ensure modal appears above other content */
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #fff;
-          padding: 20px;
-          box-shadow: 0 0 10px rgba(0,0,0,0.3);
-          max-width: 25%; /* Adjust the maximum width as needed */
-          max-height: 40%; /* Adjust the maximum width as needed */
+<style>
+    /* Styling for the modal */
+    .modal {
+        display: none;
+        /* Hide modal by default */
+        position: fixed;
+        z-index: 1000;
+        /* Ensure modal appears above other content */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 25%;
+        /* Adjust the maximum width as needed */
+        max-height: 40%;
+        /* Adjust the maximum width as needed */
+    }
+
+    /* Styling for the close button */
+    .modal-close {
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        cursor: pointer;
+        color: red;
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    /* Styling for the WhatsApp icon */
+    .whatsapp-icon {}
+
+    /* Additional styles can be added as needed */
+
+    .styled-button {
+        border: none;
+        background-color: #4CAF50;
+        display: inline-flex;
+        /* Use inline-flex to center content */
+        justify-content: center;
+        /* Center content horizontally */
+        align-items: center;
+        /* Center content vertically */
+        cursor: pointer;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        /* Center text */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    /* contact info */
+    .contact-container {
+        text-align: center;
+        border: 2px solid #fff;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Slightly translucent background */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* White shadow */
+    }
+
+    .contact-info p {
+        margin: 10px 0;
+    }
+</style>
+
+<script>
+    // Función para mostrar el modal
+    function showModal() {
+        document.getElementById('modal').style.display = 'block';
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    // Función para verificar si es móvil y abrir WhatsApp, o mostrar modal si es desktop
+    function openWhatsAppOrModal() {
+        // Detectar si es un dispositivo móvil basado en el ancho de la ventana
+        if (window.innerWidth < 768) { // Puedes ajustar este valor según sea necesario
+            // Abrir conversación de WhatsApp en lugar de mostrar el modal
+            window.open('https://api.whatsapp.com/send?phone=+522411450978', '_blank');
+        } else {
+            // Mostrar el modal como lo hacías antes para desktop
+            showModal();
         }
-        
-        /* Styling for the close button */
-        .modal-close {
-          position: absolute;
-          top: 12px;
-          right: 30px;
-          cursor: pointer;
-          color: red;
-          font-size: 100px;
-          font-weight: bold;
-        }
-        
-        /* Styling for the WhatsApp icon */
-        .whatsapp-icon {}
-        
-        /* Additional styles can be added as needed */
-        
-        .styled-button {
-            border: none;
-            background-color: #4CAF50;
-            display: inline-flex; /* Use inline-flex to center content */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            cursor: pointer;
-            border-radius: 20px;
-            transition: background-color 0.3s ease;
-            text-align: center; /* Center text */
-            padding: 0; /* Remove padding */
-        }
-        </style>
-        
-        <script>
-            // Función para mostrar el modal
-            function showModal() {
-                document.getElementById('modal').style.display = 'block';
-            }
-        
-            // Función para cerrar el modal
-            function closeModal() {
-                document.getElementById('modal').style.display = 'none';
-            }
-        
-            // Función para verificar si es móvil y abrir WhatsApp, o mostrar modal si es desktop
-            function openWhatsAppOrModal() {
-                // Detectar si es un dispositivo móvil basado en el ancho de la ventana
-                if (window.innerWidth < 768) { // Puedes ajustar este valor según sea necesario
-                    // Abrir conversación de WhatsApp en lugar de mostrar el modal
-                    window.open('https://api.whatsapp.com/send?phone=+522411450978', '_blank');
-                } else {
-                    // Mostrar el modal como lo hacías antes para desktop
-                    showModal();
-                }
-            }
-        
-            // Añadir evento click al botón
-            document.querySelector('.whatsapp-icon').addEventListener('click', openWhatsAppOrModal);
-        </script>
+    }
+
+    // Añadir evento click al botón
+    document.querySelector('.whatsapp-icon').addEventListener('click', openWhatsAppOrModal);
+</script>

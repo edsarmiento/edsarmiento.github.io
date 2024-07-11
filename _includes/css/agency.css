@@ -404,6 +404,12 @@ section h2.section-heading {
     font-size: 40px;
 }
 
+section h2.section-heading-black {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
 section h2.section-heading-cursive {
     margin-top: 0;
     margin-bottom: 15px;
@@ -748,7 +754,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
+    background-image: url('{{ site.baseurl }}/img/contact-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
