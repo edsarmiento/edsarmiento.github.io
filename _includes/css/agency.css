@@ -434,15 +434,17 @@ section h3.section-subheading {
     margin-bottom: 2rem;
 }
 
-section h3.section-subheading-table {
+section#contact .section-subheading-table {
+    color: #fff;
     margin-bottom: 5px;
     margin-top: 5px;
     text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: "{{ site.data.template.font.secondary }}";
     font-size: 16px;
     font-style: italic;
     text-align: center;
-    font-weight: 400; */
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 @media(min-width:768px) {
