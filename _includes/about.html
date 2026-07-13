@@ -1,135 +1,143 @@
-<!-- Team Section -->
-    <section id="about" class="bg-light-gray">
+<section id="about" class="bg-light-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading-cursive">let's build something amazing!</h2>
-                </div>
+            <div class="section-intro">
+                <h2 class="section-heading">About</h2>
+                <p class="section-lede">Let's build something amazing.</p>
             </div>
-            <div class="row">
+
+            <div class="about-grid">
                 {% for member in site.people %}
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <p class="text-muted">Eleazar David Sarmiento Torres</p>
-
+                <aside class="about-identity">
+                    <img src="img/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                    <h3>{{ member.name }}</h3>
+                    <p class="role">{{ member.position }}</p>
+                    <p class="legal-name">Eleazar David Sarmiento Torres</p>
+                    <div class="certs">
                         <p>
-                            Master of Science certificate
-                            <br>
-                            <a href="https://cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action" target="_BLANK">
-                                11453626
-                            </a>
+                            M.Sc. license
+                            <a href="https://cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action" target="_blank" rel="noopener">11453626</a>
                         </p>
                         <p>
-                            Professional certificate
-                                <br>
-                                <a href="https://cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action" target="_BLANK">
-                                    7173941
-                                </a>
+                            Professional license
+                            <a href="https://cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action" target="_blank" rel="noopener">7173941</a>
                         </p>
-
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}" target="_BLANK">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
                     </div>
-                </div>
+                    <ul class="list-inline social-buttons">
+                        {% for network in member.social %}
+                        <li>
+                            <a href="{{ network.url }}" target="_blank" rel="noopener" aria-label="{{ network.title }}">
+                                <i class="fa fa-{{ network.title }}"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
                 {% endfor %}
 
-                <div class="col-sm-8">
+                <div class="about-content">
+                    <div class="about-block">
+                        <h4>Bio</h4>
+                        <p>
+                            Senior Software Engineer with 15+ years of experience building scalable backend, frontend, and cloud-native applications. Experienced in Ruby on Rails, Java, TypeScript, Next.js, and AWS, with a strong background in software architecture, DevOps, CI/CD automation, and distributed systems.
+                        </p>
+                        <p>
+                            Passionate about designing reliable systems, improving developer productivity, and delivering maintainable software. Regularly leverage AI-assisted development tools to accelerate coding, testing, documentation, and engineering workflows while applying sound engineering judgment to deliver secure, scalable, and production-ready solutions.
+                        </p>
+                    </div>
 
-                    <table>
-                        <tr>
-                            <th>
-                                About me
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                Senior Software Engineer with 15+ years of experience building scalable backend, frontend, and cloud-native applications. Experienced in Ruby on Rails, Java, TypeScript, Next.js, and AWS, with a strong background in software architecture, DevOps, CI/CD automation, and distributed systems.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Passionate about designing reliable systems, improving developer productivity, and delivering maintainable software. Regularly leverage AI-assisted development tools to accelerate coding, testing, documentation, and engineering workflows while applying sound engineering judgment to deliver secure, scalable, and production-ready solutions.
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="about-block">
+                        <h4>Skills</h4>
+                        <div class="skill-group">
+                            <span class="skill-label">Languages</span>
+                            <ul class="skill-chips">
+                                <li>Ruby</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">Frameworks &amp; Technologies</span>
+                            <ul class="skill-chips">
+                                <li>Ruby on Rails</li>
+                                <li>Next.js</li>
+                                <li>React</li>
+                                <li>GraphQL</li>
+                                <li>REST APIs</li>
+                                <li>Prisma</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">Cloud &amp; DevOps</span>
+                            <ul class="skill-chips">
+                                <li>AWS</li>
+                                <li>Terraform</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>GitHub Actions</li>
+                                <li>GitLab CI</li>
+                                <li>Heroku</li>
+                                <li>Railway</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">Software Engineering</span>
+                            <ul class="skill-chips">
+                                <li>Software Architecture</li>
+                                <li>System Design</li>
+                                <li>API Design</li>
+                                <li>Microservices</li>
+                                <li>Distributed Systems</li>
+                                <li>Design Patterns</li>
+                                <li>CI/CD</li>
+                                <li>Agile</li>
+                                <li>Code Review</li>
+                                <li>Automated Testing</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">Databases</span>
+                            <ul class="skill-chips">
+                                <li>PostgreSQL</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">AI-Assisted Development</span>
+                            <ul class="skill-chips">
+                                <li>ChatGPT</li>
+                                <li>Cursor</li>
+                                <li>Claude Code</li>
+                                <li>LLM API Integration</li>
+                                <li>Workflow Automation</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    <table>
-                        <tr>
-                            <th>Category</th>
-                            <th>Skills</th>
-                        </tr>
-                        <tr>
-                            <td class="category">Languages</td>
-                            <td>Ruby, Python, Java, TypeScript, JavaScript, SQL</td>
-                        </tr>
-                        <tr>
-                            <td class="category">Frameworks &amp; Technologies</td>
-                            <td>Ruby on Rails, Next.js, React, GraphQL, REST APIs, Prisma</td>
-                        </tr>
-                        <tr>
-                            <td class="category">Cloud &amp; DevOps</td>
-                            <td>AWS, Terraform, Docker, Git, GitHub Actions, GitLab CI, Heroku, Railway</td>
-                        </tr>
-                        <tr>
-                            <td class="category">Software Engineering</td>
-                            <td>Software Architecture, System Design, API Design, Microservices, Distributed Systems, Design Patterns, CI/CD, Agile, Code Review, Automated Testing</td>
-                        </tr>
-                        <tr>
-                            <td class="category">Databases</td>
-                            <td>PostgreSQL, MySQL, MongoDB, Redis</td>
-                        </tr>
-                        <tr>
-                            <td class="category">AI-Assisted Development</td>
-                            <td>ChatGPT, Cursor, Claude Code, LLM API Integration, Workflow Automation</td>
-                        </tr>
-                    </table>
+                    <div class="about-block">
+                        <h4>Education</h4>
+                        <ul class="edu-list">
+                            <li>
+                                <strong>Master of Science in Computer Engineering</strong>
+                                <span>Universidad Autónoma de Tlaxcala, FCBIyT · 2009 – 2011 · License 11453626</span>
+                                <em>Thesis: “Maximum similarities in DNA sequences using particle swarm optimization”</em>
+                            </li>
+                            <li>
+                                <strong>Computer Engineering</strong>
+                                <span>Universidad Autónoma de Tlaxcala, FCBIyT · 2004 – 2008 · License 7173941</span>
+                                <em>Thesis: “Personal exploration using Java ME”</em>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <table>
-                        <tr>
-                            <th>Education</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Master of Science in Computer Engineering</strong> — Universidad Autónoma de Tlaxcala, FCBIyT (2009 – 2011)<br>
-                                Professional License: 11453626<br>
-                                Thesis: “Maximum similarities in DNA sequences using particle swarm optimization”
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Computer Engineering</strong> — Universidad Autónoma de Tlaxcala, FCBIyT (2004 – 2008)<br>
-                                Professional License: 7173941<br>
-                                Thesis: “Personal exploration using Java ME”
-                            </td>
-                        </tr>
-                    </table>
-
-                    <table>
-                        <tr>
-                            <th>Languages</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                Spanish — Native · English — Professional Working Proficiency (B2) · Mandarin Chinese (普通话) — Basic
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted"></p>
+                    <div class="about-block">
+                        <h4>Languages</h4>
+                        <p class="lang-line">Spanish — Native · English — Professional Working Proficiency (B2) · Mandarin Chinese (普通话) — Basic</p>
+                    </div>
                 </div>
             </div>
         </div>
