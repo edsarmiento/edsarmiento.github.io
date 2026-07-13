@@ -1,48 +1,26 @@
-url: https://edavidst.github.io
+url: https://edsarmiento.github.io
 baseurl:
 
 # Site settings
-title: David Sarmiento - Software Engineer
+title: David Sarmiento - Senior Software Engineer
 email: edst83@gmail.com
-description: "Software Engineer with more than 12 years of expierience in the IT field."
+description: "Senior Software Engineer with 15+ years of experience building scalable backend, frontend, and cloud-native applications. Ruby on Rails, TypeScript, Next.js, and AWS."
 
 
 # Team names, titles and social links
 people:
 - name: David Sarmiento
   pic: 1
-  position: Software Engineer
+  position: Senior Software Engineer
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/davidsarmiento5/
     - title: instagram
       url: https://www.instagram.com/davidst_5/
     - title: github
-      url: http://github.com/edsarmiento
+      url: https://github.com/edsarmiento
 
-# - name: 
-#   pic: 2
-#   position: 
-#   social:
-#     - title: twitter
-#       url: #
-#     - title: facebook
-#       url: #
-#     - title: linkedin
-#       url: #
-
-# - name: 
-#   pic: 3
-#   position: 
-#   social:
-#     - title: twitter
-#       url: #
-#     - title: facebook
-#       url: #
-#     - title: google-plus
-#       url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks usernames
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/davidsarmiento5/
@@ -50,11 +28,6 @@ social:
     url: https://www.instagram.com/davidst_5/
   - title: github
     url: https://github.com/edsarmiento
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown

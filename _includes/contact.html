@@ -21,10 +21,17 @@
                         <p><strong>Email:</strong></p>
                         <p><a href="mailto:edst83@gmail.com">edst83@gmail.com</a></p>
 
-                        <p><strong>Linkedin:</p></strong></p>
+                        <p><strong>LinkedIn:</strong></p>
                         <p>
                             <a href="https://www.linkedin.com/in/davidsarmiento5" target="_BLANK">
                                 https://www.linkedin.com/in/davidsarmiento5
+                            </a>
+                        </p>
+
+                        <p><strong>GitHub:</strong></p>
+                        <p>
+                            <a href="https://github.com/edsarmiento" target="_BLANK">
+                                https://github.com/edsarmiento
                             </a>
                         </p>
                     </div>
@@ -131,6 +138,8 @@
         }
     }
 
-    // Añadir evento click al botón
-    document.querySelector('.whatsapp-icon').addEventListener('click', openWhatsAppOrModal);
+    var whatsappIcon = document.querySelector('.whatsapp-icon');
+    if (whatsappIcon) {
+        whatsappIcon.addEventListener('click', openWhatsAppOrModal);
+    }
 </script>
