@@ -91,12 +91,12 @@ p {
 
 .navbar-default .nav li a {
   color: var(--text-muted) !important;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 1.05rem;
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  font-size: 1.15rem !important;
   letter-spacing: 0.02em;
-  text-transform: none;
-  padding: 0.9rem 1rem;
+  text-transform: none !important;
+  padding: 1rem 1.05rem !important;
 }
 
 .navbar-default .nav li a:hover,
@@ -155,7 +155,7 @@ p {
   }
 
   .navbar-default .nav li a {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
 
   .navbar-default.navbar-shrink {
@@ -222,28 +222,28 @@ header .brand-mark {
   letter-spacing: -0.03em;
   color: var(--text);
   margin: 0 0 1rem;
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: heroIn 0.9s ease 0.15s forwards;
+  opacity: 1;
+  transform: none;
+  animation: heroIn 0.9s ease 0.1s both;
 }
 
+header .intro-text .intro-lead-in,
 header .intro-lead-in {
-  margin: 0 0 0.75rem;
-  font-family: var(--font-body);
-  font-size: clamp(1rem, 2.4vw, 1.2rem);
-  font-style: normal;
-  font-weight: 600;
+  margin: 0 0 0.75rem !important;
+  font-family: var(--font-body) !important;
+  font-size: clamp(1rem, 2.4vw, 1.2rem) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--coral);
-  line-height: 1.4;
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: heroIn 0.9s ease 0.3s forwards;
+  color: var(--coral) !important;
+  line-height: 1.4 !important;
+  opacity: 1;
+  animation: heroIn 0.9s ease 0.2s both;
 }
 
 header .intro-heading {
-  display: none;
+  display: none !important;
 }
 
 header .intro-support {
@@ -252,9 +252,8 @@ header .intro-support {
   color: var(--text-muted);
   max-width: 32rem;
   line-height: 1.55;
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: heroIn 0.9s ease 0.45s forwards;
+  opacity: 1;
+  animation: heroIn 0.9s ease 0.3s both;
 }
 
 header .btn-xl,
@@ -270,9 +269,8 @@ header .btn-xl,
   letter-spacing: 0.02em;
   text-transform: none;
   padding: 0.9rem 1.6rem;
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: heroIn 0.9s ease 0.6s forwards;
+  opacity: 1;
+  animation: heroIn 0.9s ease 0.4s both;
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -291,14 +289,19 @@ header .btn-xl:hover,
     padding: 5rem 0 3rem !important;
   }
 
+  header .intro-text .intro-lead-in,
   header .intro-lead-in {
-    font-size: 1.15rem;
-    font-style: normal;
-    line-height: 1.4;
+    font-size: 1.15rem !important;
+    font-style: normal !important;
+    line-height: 1.4 !important;
   }
 }
 
 @keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -307,12 +310,13 @@ header .btn-xl:hover,
 
 @media (prefers-reduced-motion: reduce) {
   header .brand-mark,
+  header .intro-text .intro-lead-in,
   header .intro-lead-in,
   header .intro-support,
   header .btn-xl {
-    animation: none;
-    opacity: 1;
-    transform: none;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 

@@ -7,7 +7,7 @@ color:
   hover-selected: ff8566
   link-dark-blue: ff6b4a
 
-# Font Families
+# Font Families (no nested quotes — Agency wraps these in CSS quotes)
 font:
-  primary: 'Source Sans 3, "Helvetica Neue", Helvetica, Arial, sans-serif'
-  secondary: 'Fraunces, Georgia, "Times New Roman", serif'
+  primary: Source Sans 3, Helvetica Neue, Helvetica, Arial, sans-serif
+  secondary: Fraunces, Georgia, Times New Roman, serif
