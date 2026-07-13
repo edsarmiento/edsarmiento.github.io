@@ -595,6 +595,12 @@ section h2.section-heading-cursive {
   object-fit: cover;
 }
 
+.timeline > li .timeline-image img.timeline-logo--contain {
+  object-fit: contain;
+  background: #fff;
+  padding: 0.55rem;
+}
+
 .timeline > li .timeline-image h4 {
   font-family: var(--font-body);
   font-size: 0.85rem;
