@@ -32,8 +32,8 @@ body {
   font-family: var(--font-body);
   color: var(--text);
   background: var(--ink);
-  line-height: 1.65;
-  font-size: 17px;
+  line-height: 1.7;
+  font-size: 17.5px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -49,7 +49,7 @@ a:focus {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem !important;
   line-height: 1.75;
   color: var(--text-muted);
 }
@@ -79,7 +79,7 @@ p {
   color: var(--text) !important;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   letter-spacing: -0.02em;
   text-transform: none;
 }
@@ -93,10 +93,10 @@ p {
   color: var(--text-muted) !important;
   font-family: var(--font-body) !important;
   font-weight: 600 !important;
-  font-size: 1.15rem !important;
+  font-size: 1.25rem !important;
   letter-spacing: 0.02em;
   text-transform: none !important;
-  padding: 1rem 1.05rem !important;
+  padding: 1rem 1.1rem !important;
 }
 
 .navbar-default .nav li a:hover,
@@ -150,12 +150,12 @@ p {
 
   .navbar-default .navbar-brand {
     font-family: var(--font-display) !important;
-    font-size: 1.4rem !important;
+    font-size: 1.55rem !important;
     color: var(--text) !important;
   }
 
   .navbar-default .nav li a {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 
   .navbar-default.navbar-shrink {
@@ -164,7 +164,7 @@ p {
   }
 
   .navbar-default.navbar-shrink .navbar-brand {
-    font-size: 1.25rem !important;
+    font-size: 1.35rem !important;
   }
 
   .navbar-default .navbar-nav > .active > a {
@@ -216,7 +216,7 @@ header .intro-text {
 
 header .brand-mark {
   font-family: var(--font-display);
-  font-size: clamp(2.75rem, 8vw, 4.75rem);
+  font-size: clamp(3rem, 8vw, 5.25rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -231,7 +231,7 @@ header .intro-text .intro-lead-in,
 header .intro-lead-in {
   margin: 0 0 0.75rem !important;
   font-family: var(--font-body) !important;
-  font-size: clamp(1rem, 2.4vw, 1.2rem) !important;
+  font-size: clamp(1.2rem, 2.6vw, 1.4rem) !important;
   font-style: normal !important;
   font-weight: 600 !important;
   letter-spacing: 0.04em;
@@ -248,9 +248,9 @@ header .intro-heading {
 
 header .intro-support {
   margin: 0 0 2rem;
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
   color: var(--text-muted);
-  max-width: 32rem;
+  max-width: 36rem;
   line-height: 1.55;
   opacity: 1;
   animation: heroIn 0.9s ease 0.3s both;
@@ -265,10 +265,10 @@ header .btn-xl,
   background: var(--coral);
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   letter-spacing: 0.02em;
   text-transform: none;
-  padding: 0.9rem 1.6rem;
+  padding: 1rem 1.75rem;
   opacity: 1;
   animation: heroIn 0.9s ease 0.4s both;
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -291,7 +291,7 @@ header .btn-xl:hover,
 
   header .intro-text .intro-lead-in,
   header .intro-lead-in {
-    font-size: 1.15rem !important;
+    font-size: 1.35rem !important;
     font-style: normal !important;
     line-height: 1.4 !important;
   }
@@ -334,7 +334,7 @@ section h2.section-heading,
 section h2.section-heading-black,
 section h2.section-heading-cursive {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(2.35rem, 4.5vw, 3.15rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -344,10 +344,10 @@ section h2.section-heading-cursive {
 }
 
 .section-lede {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 0 auto 3rem;
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1.25rem !important;
 }
 
 .section-intro {
@@ -390,7 +390,7 @@ section h2.section-heading-cursive {
 
 .about-identity h3 {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin: 0 0 0.25rem;
   color: var(--text);
 }
@@ -398,17 +398,18 @@ section h2.section-heading-cursive {
 .about-identity .role {
   color: var(--coral);
   font-weight: 600;
+  font-size: 1.15rem;
   margin-bottom: 0.35rem;
 }
 
 .about-identity .legal-name {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   margin-bottom: 1rem;
 }
 
 .about-identity .certs {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 1.25rem;
 }
@@ -440,7 +441,7 @@ section h2.section-heading-cursive {
 
 .about-block h4 {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   color: var(--text);
   margin: 0 0 0.85rem;
   letter-spacing: -0.01em;
@@ -464,7 +465,7 @@ section h2.section-heading-cursive {
 
 .skill-label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -492,8 +493,8 @@ section h2.section-heading-cursive {
   background: var(--ink);
   border: 1px solid var(--border);
   color: var(--text);
-  font-size: 0.88rem;
-  padding: 0.35rem 0.7rem;
+  font-size: 1.05rem;
+  padding: 0.4rem 0.85rem;
   border-radius: 999px;
 }
 
@@ -520,13 +521,14 @@ section h2.section-heading-cursive {
 .edu-list em {
   display: block;
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-style: normal;
 }
 
 .lang-line {
   color: var(--text-muted);
   margin: 0;
+  font-size: 1.125rem !important;
 }
 
 /* Kill old table styles inside about */
@@ -595,7 +597,7 @@ section h2.section-heading-cursive {
 
 .timeline > li .timeline-image h4 {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -608,7 +610,7 @@ section h2.section-heading-cursive {
 
 .timeline .timeline-heading h4 {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -618,7 +620,7 @@ section h2.section-heading-cursive {
 
 .timeline .timeline-heading h4.subheading {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: none;
@@ -639,7 +641,7 @@ section h2.section-heading-cursive {
 .timeline .text-details-about {
   text-align: left;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 1.1rem !important;
   line-height: 1.7;
   margin: 0;
 }
@@ -654,13 +656,13 @@ section h2.section-heading-cursive {
 }
 
 .tech-chips li {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text);
   background: var(--ink-soft);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 0.25rem 0.55rem;
+  padding: 0.3rem 0.65rem;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -757,7 +759,7 @@ section h2.section-heading-cursive {
 
 .service-item h4 {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text);
   margin: 0 0 0.75rem;
 }
@@ -775,7 +777,7 @@ section h2.section-heading-cursive {
   margin: 0 0 0.65rem;
   padding: 0 0 0 0.85rem;
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 1.1rem !important;
   text-align: left;
   transform: none;
 }
@@ -818,7 +820,7 @@ section h2.section-heading-cursive {
 
 .contact-container p strong {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--coral);
@@ -832,7 +834,7 @@ section h2.section-heading-cursive {
 
 .contact-container a {
   color: var(--text);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   word-break: break-all;
 }
 
@@ -884,4 +886,192 @@ footer .list-inline.social-buttons > li a {
 /* Hide unused Agency post list if present */
 .home {
   display: none;
+}
+
+/* ——— Global type scale (beats Agency 14px rules) ——— */
+html {
+  font-size: 17px;
+}
+
+body,
+body p,
+.text-details-about,
+.section-lede,
+.about-block p,
+.lang-line,
+.timeline .timeline-body > p,
+.service-item .styled-list li,
+.edu-list span,
+.edu-list em,
+.edu-list strong,
+.contact-container p,
+.contact-container a,
+footer,
+footer span.copyright {
+  font-size: 1.125rem !important;
+  line-height: 1.7 !important;
+}
+
+.navbar-default .nav li a {
+  font-size: 1.12rem !important;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 1.35rem !important;
+}
+
+section h2.section-heading,
+section h2.section-heading-black,
+section h2.section-heading-cursive {
+  font-size: clamp(2.25rem, 6.5vw, 3.1rem) !important;
+}
+
+.about-block h4,
+.service-item h4 {
+  font-size: 1.4rem !important;
+}
+
+.about-identity h3 {
+  font-size: 1.7rem !important;
+}
+
+.about-identity .role {
+  font-size: 1.15rem !important;
+}
+
+.skill-label {
+  font-size: 0.95rem !important;
+}
+
+.skill-chips li,
+.tech-chips li {
+  font-size: 1.02rem !important;
+}
+
+.timeline .timeline-heading h4 {
+  font-size: 1.02rem !important;
+}
+
+.timeline .timeline-heading h4.subheading {
+  font-size: 1.4rem !important;
+}
+
+header .brand-mark {
+  font-size: clamp(2.6rem, 10vw, 5.1rem) !important;
+}
+
+header .intro-text .intro-lead-in,
+header .intro-lead-in {
+  font-size: clamp(1.15rem, 4vw, 1.4rem) !important;
+}
+
+header .intro-support {
+  font-size: clamp(1.12rem, 3.8vw, 1.4rem) !important;
+}
+
+header .btn-xl,
+.btn-xl {
+  font-size: 1.1rem !important;
+}
+
+/* Mobile: readable but not oversized */
+@media (max-width: 767px) {
+  html {
+    font-size: 17.5px;
+  }
+
+  body {
+    font-size: 17.5px !important;
+  }
+
+  body p,
+  .text-details-about,
+  .section-lede,
+  .about-block p,
+  .lang-line,
+  .timeline .timeline-body > p,
+  .service-item .styled-list li,
+  .edu-list span,
+  .edu-list em,
+  .contact-container a,
+  footer span.copyright {
+    font-size: 1.15rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .navbar-default .nav li a {
+    font-size: 1.2rem !important;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 1.3rem !important;
+  }
+
+  section h2.section-heading,
+  section h2.section-heading-black,
+  section h2.section-heading-cursive {
+    font-size: 2.35rem !important;
+  }
+
+  .about-block h4,
+  .service-item h4 {
+    font-size: 1.4rem !important;
+  }
+
+  .skill-chips li,
+  .tech-chips li {
+    font-size: 1.05rem !important;
+    padding: 0.4rem 0.85rem !important;
+  }
+
+  .timeline .timeline-heading h4.subheading {
+    font-size: 1.3rem !important;
+  }
+
+  header .intro-text {
+    padding: 5.5rem 0 2.5rem !important;
+  }
+
+  header .brand-mark {
+    font-size: clamp(2.4rem, 11vw, 3.3rem) !important;
+  }
+
+  header .intro-text .intro-lead-in,
+  header .intro-lead-in {
+    font-size: 1.2rem !important;
+  }
+
+  header .intro-support {
+    font-size: 1.2rem !important;
+  }
+
+  header .btn-xl,
+  .btn-xl {
+    font-size: 1.15rem !important;
+    padding: 1rem 1.6rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18.5px;
+  }
+
+  body {
+    font-size: 18.5px !important;
+  }
+
+  body p,
+  .text-details-about,
+  .section-lede,
+  .about-block p,
+  .timeline .timeline-body > p,
+  .service-item .styled-list li {
+    font-size: 1.12rem !important;
+  }
+
+  .navbar-default .nav li a {
+    font-size: 1.18rem !important;
+  }
 }
